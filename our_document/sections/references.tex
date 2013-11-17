@@ -1,0 +1,10 @@
+
+\renewcommand{\bibname}{References}
+% \phantomsection
+
+\bibliographystyle{style/IEEEtran}
+\bibliography{sections/bibliography}
+\addcontentsline{toc}{chapter}{\bibname}
+
+\ifthenelse{\isodd{\value{page}}}{\cleardoublepage}{\clearpage}
+

@@ -1,0 +1,114 @@
+\documentclass[a4paper, 10pt, twoside]{report}
+
+\input{style/style.tex}
+
+\renewcommand{\titleinfo} {Active Life for Old Adults}
+\renewcommand{\authorinfo}
+{
+	Tim van Elteren \\
+	Ruurd Moelker \\
+	Mohamed Elsiouffy \\
+	Hessel van Apeldoorn
+}
+
+\title{\titleinfo}
+\author{\authorinfo}
+
+\makeglossaries
+
+\begin{document}
+
+\makeatletter
+\renewcommand*\l@figure{\@dottedtocline{1}{1.5em}{4.5em}}% 3em instead of 2.3em
+\let\l@table\l@figure
+\makeatother
+
+\selectlanguage{english}			% use English
+
+\maketitle
+
+\input{sections/authors.tex}
+zzzzzzz
+\input{sections/revisionhistory.tex}
+
+\mylistoffigures
+\mylistoftables
+
+\mytableofcontents
+
+\input{sections/glossary.tex}
+
+\input{sections/0.introduction.tex}
+% \input{sections/1.context.tex}
+% \input{sections/2.business.tex}
+% \input{sections/3.requirements.tex}
+% \input{sections/4.analysis.tex}
+% \input{sections/5.systemarchitecture.tex}
+% \input{sections/6.hardwarearchitecture.tex}
+% \input{sections/7.softwarearchitecture.tex}
+% \input{sections/8.architectureverification.tex}
+% \input{sections/9.systemevolution.tex}
+
+\myglossaries
+
+\input{sections/references}
+
+\input{sections/appendices}
+
+\end{document}
+
+% Change history
+% Table of contents
+% 1. System context (max. 1 page)
+% Description of the position of the envisaged system in its environment.
+% 2. Architectural relevant business information (max. 5 pages)
+% 2.1 Business vision
+% Description of the envisaged business opportunities and unique selling points
+% Advantages and disadvantages with respect to the current situation.
+% 2.2 Business rationale
+% 2.3 Product/service description and its evolution over time
+% 2.4 Target audience
+% 2.5 Business/Domain model
+% 2.6 Roadmaps about market development, product introduction, etc.
+% 2.7 Financial model as a function of time
+% Unit price (production & selling), turnover
+% Investment, operational costs, profit, break-even-point, etc.
+% 3. Requirements (max. 10 pages)
+% 3.1 Architectural vision
+% 3.2 Stakeholders and their concerns
+% Customer, users, implementers, configurators, maintainers, resellers, etc.
+% 3.3 Stories and Use-cases
+% 3.4 Functional requirements
+% 3.5 Commercial non-functional requirements
+% Product appearance, prizing, etc.
+% 3.6 Technical non-functional requirements:
+% Dependability (timeliness, performance, reliability & safety, availability,
+% security), adaptability, scalability, maintainability, interoperability, etc.
+% 3.7 Evolution Requirements
+% Typical change-cases with respect to the environment, the features and the
+% technology of the system
+% 3.8 Risk assessment
+% E.g. in terms of business-, technical-, implementation-, operational- and other risks.
+% 4. Analysis (max. 5 pages)
+% 4.1 Assumptions
+% 4.2 Technology roadmaps
+% 4.3 Design alternatives
+% Important design alternatives, their advantages/disadvantages, their feasibility. The major design decisions must be documented together with their rationale.
+% 5. System architecture (max. 10 pages)
+% 5.1 Initial models (several important alternatives should be considered)
+% Design rationale, rationale for and summary of the alternative that will be
+% worked out subsequently.
+% 5.2 Elaborated model
+% 5.3 Verification
+% Verification of important requirements like costs, end-to-end performance in terms of responsiveness and system resource usage, reliability, etc.
+% 6. Hardware architecture (max. 10 pages)
+% High-level, reverse-engineered description of the hardware platform and its application interfaces.
+% 7. Software architecture (max. 15 pages)
+% 7.1 Architectural views & patterns within the views
+% 7.2 Components, including their functionality, interfaces and interactions.
+% 8. Architecture verification (max. 5 pages)
+% 8.1 Requirements verification
+% 8.2 Architecture evaluation (ATAM, SAAM etc.) & conclusions/improvements
+% 9. System evolution (max. 5 pages)
+% Appendices: Project plan (planned iterations and real ones) like references, glossary and open points
+

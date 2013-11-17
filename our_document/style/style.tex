@@ -1,0 +1,126 @@
+
+\usepackage[english, dutch]{babel}		% both English and Dutch can be used
+
+\usepackage[a4paper]{geometry}  % margins
+\usepackage{setspace}  % spacing between lines
+\usepackage{fancyhdr}  % pagestyle
+\usepackage[parfill]{parskip}  % set \indent to \\ \\
+
+%% Chapters (layout)
+\usepackage{pdfpages}  % include PDF (frontpage)
+% \usepackage{natbib}  % style of references
+\usepackage[hidelinks]{hyperref}
+\usepackage{datatool}
+\usepackage{glossaries}
+\usepackage[titletoc]{appendix}
+\usepackage{titlesec}
+
+%% Tables
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{ltxtable}
+\usepackage{booktabs}
+\usepackage{multirow}
+
+\usepackage{amsmath}
+\usepackage{eurosym}
+\usepackage{courier}  % listings font
+\usepackage{listings}
+
+\usepackage{rotating}
+\usepackage{subfigure}
+\usepackage{comment}
+\usepackage{pbox}
+\usepackage{calc}
+
+
+% == Landscape =================================================================
+\usepackage{pdflscape}  % turn the page also in the PDF
+% \usepackage{lscape}  % do not turn the page in the PDF
+% ==============================================================================
+
+\usepackage{color}  % listings colors
+
+\definecolor{gray95}{gray}{0.95}
+\definecolor{gray50}{gray}{0.5}
+
+
+
+\newcommand{\titleinfo}{$ < $ Title $ > $}
+\newcommand{\authorinfo}{$ < $ Author $ > $}
+
+\pagestyle{fancy}
+\cfoot{}
+\fancyhead[RE]{\small\bf\nouppercase\rightmark}
+\fancyhead[LO]{\small\bf\nouppercase\leftmark}
+\fancyhead[LE, RO]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\headheight}{15pt}
+
+\titleformat{\chapter}{\Huge\bfseries}{\thechapter.}{20pt}{}
+\titlespacing*{\chapter}{0pt}{15pt}{10pt}
+
+% \setlength{\parskip}{2mm}
+% \onehalfspacing
+
+\renewcommand{\maketitle}
+{
+	\includepdf{frontpage/frontpage.pdf}
+	\thispagestyle{empty}
+	% \cleardoublepage
+	\pagenumbering{roman}
+}
+
+\newcommand{\mytableofcontents}
+{
+	\renewcommand{\contentsname}{Table of Contents}
+	% \addcontentsline{toc}{chapter}{\contentsname}
+	\tableofcontents
+}
+
+\newcommand{\mylistoffigures}
+{
+	\listoffigures
+	\addcontentsline{toc}{chapter}{List of Figures}
+}
+
+\newcommand{\myglossaries}
+{
+	\glstoctrue
+	\printglossaries
+	% \addcontentsline{toc}{chapter}{Glossary}
+}
+
+\newcommand{\mylistoftables}
+{
+	\listoftables
+	\addcontentsline{toc}{chapter}{List of Tables}
+}
+
+\lstset
+{
+	basicstyle = \fontsize{7pt}{7}\ttfamily,
+	keywordstyle = \color{black}\bfseries,
+	backgroundcolor = \color{gray95},
+	commentstyle = \color{gray50},
+	numbers = left,
+	language = C++,
+	frame = top + left,
+	numberstyle = \tiny,
+	breaklines = true,
+	showspaces = false,
+	showstringspaces = false,
+	showtabs = false,
+	tabsize = 2,
+	caption = \tt\lstname,
+	xleftmargin = 0pt,
+	framexleftmargin = 4pt,
+	numbersep = 14pt,
+}
+
+\newcommand{\illst}{\lstinline[basicstyle = \ttfamily]}  % prevent small size of inline listing
+
+\glossarystyle{altlist}
+
+\renewcommand{\labelitemi}{$ \circ $}  % ◦
+\renewcommand{\labelitemii}{$ \cdot $}  % ·
