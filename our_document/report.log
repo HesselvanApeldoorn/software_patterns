@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.11.9)  17 NOV 2013 15:53
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.11.9)  17 NOV 2013 16:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -798,7 +798,7 @@ Dictionary: glossaries-dictionary, Language: English
 )
 \c@lstlisting=\count188
 
-<frontpage/frontpage.pdf, id=26, page=1, 597.50829pt x 845.0471pt>
+<frontpage/frontpage.pdf, id=14, page=1, 597.50829pt x 845.0471pt>
 File: frontpage/frontpage.pdf Graphic file (type pdf)
 
 <use frontpage/frontpage.pdf, page 1>
@@ -852,6 +852,20 @@ Package pdftex.def Info: frontpage/frontpage.pdf, page1 used on input line 28.
  (./sections/glossary.tex)
 (./sections/0.introduction.tex [4
 
+]) (./sections/2.business-information.texpdfTeX warning (ext4): destination wit
+h the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1 \chapter
+            *{Business Information} [1
+
+]) (./sections/3.requirements.texpdfTeX warning (ext4): destination with the sa
+me identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1 \chapter
+            *{Introduction} [1
+
 ]) (./report.gls) (./sections/references.tex
 (./report.bblpdfTeX warning (ext4): destination with the same identifier (name{
 page.1}) has been already used, duplicate ignored
@@ -877,15 +891,22 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 58.
  (./report.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 58.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 58.
-Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 6F789CB57B75E571C1A61654B796B70E;244.
+
+
+Package rerunfilecheck Warning: File `report.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `report.out':
+(rerunfilecheck)             Before: E287286D16C2D7BBC07258A025F7C57F;101
+(rerunfilecheck)             After:  73A91D5FACAFF6DD9A81640674B0DB00;348.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 58.
  ) 
 Here is how much of TeX's memory you used:
- 13386 strings out of 495059
- 190696 string characters out of 3182030
+ 13391 strings out of 495059
+ 190844 string characters out of 3182030
  372065 words of memory out of 3000000
- 16234 multiletter control sequences out of 15000+200000
+ 16231 multiletter control sequences out of 15000+200000
  5822 words of font info for 22 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  49i,18n,97p,1481b,526s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -897,10 +918,10 @@ s/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/uc
 rr8a.pfb>
-Output written on report.pdf (8 pages, 126304 bytes).
+Output written on report.pdf (10 pages, 127568 bytes).
 PDF statistics:
- 119 PDF objects out of 1000 (max. 8388607)
- 97 compressed objects within 1 object stream
- 17 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 114 PDF objects out of 1000 (max. 8388607)
+ 90 compressed objects within 1 object stream
+ 19 named destinations out of 1000 (max. 500000)
+ 32 words of extra memory for PDF output out of 10000 (max. 10000000)
 
