@@ -1,4 +1,14 @@
+*.backup
 .~lock.*
+
+report.aux
+report.glo
+report.ist
+report.lof
+report.lot
+report.out
+report.pdf
+report.toc
 
 # general ignores #
 ###################
