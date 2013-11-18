@@ -1,9 +1,0 @@
-\select@language {dutch}
-\select@language {english}
-\contentsline {chapter}{List of Figures}{ii}{chapter*.3}
-\contentsline {chapter}{List of Tables}{iii}{chapter*.4}
-\contentsline {chapter}{Introduction}{1}{chapter*.6}
-\contentsline {chapter}{Business Information}{1}{chapter*.7}
-\contentsline {chapter}{Introduction}{1}{chapter*.8}
-\contentsline {chapter}{References}{2}{chapter*.9}
-\contentsline {chapter}{\numberline {A}Time Tracking}{A-1}{appendix.A}
